@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modify</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <div class="mcontainer">
+        <% if(result.method==1){ %>
+        <h2>New Post</h2>
+        <form action="/post" method="POST">
+             <input type="text" name="title" id="tit" placeholder="Title">
+             <textarea name="content" placeholder="Content" id="textau" rows="10"></textarea>
+             <input type="text" name="author" id="au" placeholder="Author">
+             <button type="submit">Create Post</button>
+
+        </form>
+    
+    <% } else { %>
+        <h2>Edit Post</h2>
+        <form action="/modify/<%=result.id %>" method="POST">
+             <input type="text" name="title" id="tit" placeholder="Title">
+             <textarea name="content" placeholder="Content" id="textau" rows="10"></textarea>
+             <input type="text" name="author" id="au" placeholder="Author">
+             <button type="submit">Edit Post</button>
+
+        </form>
+        <% } %>
+    </div>
+</body>
+</html>

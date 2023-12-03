@@ -1,0 +1,96 @@
+*{
+    margin:0;
+    border:0;
+    box-sizing: border-box;
+}
+.container{
+     width:800px;
+     margin:60px auto;
+     
+}
+.card{
+    background-color:#FFFBF5 ;
+    max-height:100%;
+    padding:30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:15px;
+}
+h2 {
+    font-family: 'Geneva';
+    font-style: normal;
+    font-size: 36px;
+}
+a button{
+    color:white;
+    background-color: #489a30;
+    width:120px;
+    padding:10px;
+    border-radius: 10%;
+    font-size: 20px;
+}
+.blogcomment{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:10px;
+    padding:10px 0px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.297);
+    
+}
+.blogcomment h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+}
+.blogcomment p{
+    font-family: calibri;
+    line-height: 24px;
+    font-size: 20px;
+}
+
+.blogcomment .edit {
+    background-color: rgb(10, 10, 127) ;
+    width:100px;
+    max-height: 100%;
+    padding:20px 0 px;
+}
+.blogcomment .delete{
+    background-color: rgb(196, 26, 26);
+}
+.mcontainer{
+    width:800px;
+    margin:50px auto;
+    background-color: rgb(255, 252, 252);
+    box-shadow: 5px 5px 10px rgba(199, 192, 192, 0.583);
+    padding:20px 15px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+.mcontainer h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:15px;
+}
+form input{
+    padding:10px 15px;
+    border:1px solid black;
+    border-radius: 4px;
+}
+form button{
+    background-color: rgb(43, 127, 205);
+    color:white;
+    font-size:20px;
+    padding:5px;
+    border-radius: 8px;
+}
+form textarea{
+    padding:10px 15px;
+    border: 1px solid black;
+    border-radius: 4px;
+}

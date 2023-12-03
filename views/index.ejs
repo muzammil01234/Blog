@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <h2>My Blog</h2>
+            <a href="/new">
+            <button>New Post</button>
+            </a>
+            <% result.forEach( (element) => { %> 
+                <div class="blogcomment">
+                    <h2><%= element.title %></h2>
+                    <small><%= element.time  %></small>
+                    <p><%=element.content  %></p>
+                    <small> By: <%= element.author  %></small>
+                    <div>
+                        <a href="/edit/<%= element.id %>" >
+                        <button class="edit">Edit</button></a>
+                        <a href="/delete/<%= element.id %> ">
+                            <button class="delete">Delete</button></a>
+                    </div>
+                </div>
+           <% });%>
+        </div>
+    </div>
+    
+</body>
+</html>
